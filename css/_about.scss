@@ -1,0 +1,36 @@
+.about__image {
+	width: 100%;
+	height: auto;
+}
+
+.about__image-wrap {
+	right: 0;
+	z-index: -1000;
+	width: 100%;
+}
+
+.about__text {
+	font-weight: 200;
+	position: relative;
+}
+
+.about__headline {
+	display: inline-block;
+}
+
+.about__top {
+	display: flex;
+	flex-direction: column-reverse;
+
+	@media #{$breakpoint-md} {
+
+		flex-direction: row;
+
+	}
+
+	
+}
+
+.about__title {
+	align-self: flex-end;
+}

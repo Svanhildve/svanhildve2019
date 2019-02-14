@@ -1,0 +1,46 @@
+
+
+body {
+	font-family: 'Acumin Pro Wide', sans-serif;
+	font-size: 16px;
+	color: #333333;
+}
+
+p {
+	line-height: 26px;
+	margin-top: 0;
+	margin-bottom: 16px;
+	line-height: 32px;
+}
+
+strong {
+	font-family: 'biotif-bold';
+	font-weight: normal;
+}
+
+.lede {
+	font-size: 21px;
+	line-height: 33px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Eczar semibold', serif;
+	font-weight: 100;
+}
+
+.h1--about {
+	font-size: 40px;
+	line-height: 45px;
+
+	@media #{$breakpoint-md} {
+		font-size: 100px;
+		line-height: 110px;
+	}
+}
+
+.h2--project-card {
+	@media #{$breakpoint-md} {
+		font-size: 70px;
+		line-height: 110px;
+	}
+}
