@@ -89,8 +89,9 @@
 
 // Project page
 
-.project__top {
+.headline__case {
 	text-align: center;
+	color: white;
 }
 
 .fixed {
@@ -144,4 +145,13 @@
 	@media #{$breakpoint-md} {
 		font-size: 80px;
 	}
+}
+
+.portfolio-headline__meta {
+	font-family: 'Acumin Pro Wide', sans-serif;
+	font-weight: 100;
+	@media #{$breakpoint-md} {
+		font-size: 20px;
+	}
+
 }

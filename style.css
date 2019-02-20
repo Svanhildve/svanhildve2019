@@ -487,6 +487,9 @@
   transition: all 0.4s;
   opacity: 0; }
 
+.header--case {
+  background-image: url("images/handverkspartner.png"); }
+
 body {
   font-family: 'Acumin Pro Wide', sans-serif;
   font-size: 16px;
@@ -499,7 +502,7 @@ p {
   line-height: 32px; }
 
 strong {
-  font-family: 'biotif-bold';
+  font-family: 'Acumin Pro Wide';
   font-weight: normal; }
 
 .lede {
@@ -522,6 +525,12 @@ h1, h2, h3, h4, h5, h6 {
   .h2--project-card {
     font-size: 70px;
     line-height: 110px; } }
+
+.h1--project {
+  font-size: 36px; }
+  @media only screen and (min-width: 768px) {
+    .h1--project {
+      font-size: 80px; } }
 
 @keyframes fadeIn {
   from {
@@ -654,14 +663,27 @@ a.squiggly {
     background-size: auto 1px;
     background-position: 0 20px; }
 
+/*.about__image {
+	width: 100%;
+	height: auto;
+}
+*/
 .about__image {
+  background-image: url("images/about2.png");
   width: 100%;
-  height: auto; }
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  background-position: 30% 50%;
+  position: absolute;
+  backface-visibility: hidden; }
 
 .about__image-wrap {
   right: 0;
   z-index: -1000;
-  width: 100%; }
+  position: relative;
+  height: 500px; }
 
 .about__text {
   font-weight: 200;
@@ -672,15 +694,21 @@ a.squiggly {
 
 .about__top {
   display: flex;
-  flex-direction: column-reverse; }
+  flex-direction: column-reverse;
+  margin-top: 20px; }
   @media only screen and (min-width: 768px) {
     .about__top {
-      flex-direction: row; } }
+      flex-direction: row;
+      margin-top: -60px;
+      margin-bottom: 50px; } }
 
 .about__title {
-  align-self: center;
   position: relative;
-  bottom: 90px; }
+  bottom: 70px; }
+  @media only screen and (min-width: 768px) {
+    .about__title {
+      bottom: 90px;
+      align-self: center; } }
 
 .h1--about {
   position: absolute;
@@ -750,8 +778,9 @@ a.squiggly {
 	
 
 }*/
-.project__top {
-  text-align: center; }
+.headline__case {
+  text-align: center;
+  color: white; }
 
 .fixed {
   position: fixed; }
@@ -790,5 +819,12 @@ a.squiggly {
   @media only screen and (min-width: 768px) {
     .next-project__title {
       font-size: 80px; } }
+
+.portfolio-headline__meta {
+  font-family: 'Acumin Pro Wide', sans-serif;
+  font-weight: 100; }
+  @media only screen and (min-width: 768px) {
+    .portfolio-headline__meta {
+      font-size: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

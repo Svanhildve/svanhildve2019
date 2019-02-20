@@ -14,7 +14,7 @@ p {
 }
 
 strong {
-	font-family: 'biotif-bold';
+	font-family: 'Acumin Pro Wide';
 	font-weight: normal;
 }
 
@@ -42,5 +42,12 @@ h1, h2, h3, h4, h5, h6 {
 	@media #{$breakpoint-md} {
 		font-size: 70px;
 		line-height: 110px;
+	}
+}
+
+.h1--project {
+	font-size: 36px;
+	@media #{$breakpoint-md} {
+		font-size: 80px;
 	}
 }
