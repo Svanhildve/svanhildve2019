@@ -430,7 +430,7 @@
   padding: 0 14px; }
 
 .header {
-  padding: 20px;
+  padding: 30px;
   top: 0;
   /* Stay on top */
   width: 100%;
@@ -441,7 +441,7 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     .header {
       padding: 100px; } }
 
@@ -467,10 +467,6 @@
     text-decoration: none; }
   .header__nav__item .active {
     text-decoration: line-through; }
-
-.header__logo__h {
-  opacity: 1;
-  transition: all 0.4s; }
 
 .header__logo__text {
   transition: all 0.4s;
@@ -512,14 +508,6 @@ strong {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Eczar semibold', serif;
   font-weight: 100; }
-
-.h1--about {
-  font-size: 40px;
-  line-height: 45px; }
-  @media only screen and (min-width: 768px) {
-    .h1--about {
-      font-size: 100px;
-      line-height: 110px; } }
 
 @media only screen and (min-width: 768px) {
   .h2--project-card {
@@ -565,10 +553,6 @@ body {
 .dark {
   background: #0F1223;
   color: #ffffff; }
-
-@media only screen and (min-width: 768px) {
-  .grid-container.about {
-    padding-left: 100px; } }
 
 .svanhild {
   background: url("images/svanhild.jpg");
@@ -690,13 +674,17 @@ a.squiggly {
   position: relative; }
 
 .about__headline {
-  display: inline-block; }
+  display: inline-block;
+  margin-left: 20px; }
+  @media only screen and (min-width: 1024px) {
+    .about__headline {
+      margin-left: 0; } }
 
 .about__top {
   display: flex;
   flex-direction: column-reverse;
   margin-top: 20px; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     .about__top {
       flex-direction: row;
       margin-top: -60px;
@@ -704,8 +692,11 @@ a.squiggly {
 
 .about__title {
   position: relative;
-  bottom: 70px; }
+  bottom: 110px; }
   @media only screen and (min-width: 768px) {
+    .about__title {
+      bottom: 210px; } }
+  @media only screen and (min-width: 1024px) {
     .about__title {
       bottom: 90px;
       align-self: center; } }
@@ -714,10 +705,26 @@ a.squiggly {
   position: absolute;
   top: 0;
   color: rgba(255, 255, 255, 0);
-  -webkit-text-stroke: 1px white; }
+  -webkit-text-stroke: 1px white;
+  width: 250px; }
   @media only screen and (min-width: 768px) {
     .h1--about {
+      width: 400px; } }
+  @media only screen and (min-width: 1024px) {
+    .h1--about {
       width: 600px; } }
+
+.h1--about {
+  font-size: 40px;
+  line-height: 45px; }
+  @media only screen and (min-width: 768px) {
+    .h1--about {
+      font-size: 60px;
+      line-height: 65px; } }
+  @media only screen and (min-width: 1024px) {
+    .h1--about {
+      font-size: 100px;
+      line-height: 110px; } }
 
 .portfolio-card__item {
   text-align: center;

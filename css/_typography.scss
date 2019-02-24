@@ -28,15 +28,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 100;
 }
 
-.h1--about {
-	font-size: 40px;
-	line-height: 45px;
-
-	@media #{$breakpoint-md} {
-		font-size: 100px;
-		line-height: 110px;
-	}
-}
 
 .h2--project-card {
 	@media #{$breakpoint-md} {

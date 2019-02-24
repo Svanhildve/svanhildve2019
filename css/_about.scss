@@ -26,10 +26,16 @@
 .about__text {
 	font-weight: 200;
 	position: relative;
+
 }
 
 .about__headline {
 	display: inline-block;
+	margin-left: 20px;
+
+	@media #{$breakpoint-ml} {
+		margin-left: 0;
+	}
 }
 
 .about__top {
@@ -37,7 +43,7 @@
 	flex-direction: column-reverse;
 	margin-top: 20px;
 
-	@media #{$breakpoint-md} {
+	@media #{$breakpoint-ml} {
 
 		flex-direction: row;
 		margin-top: -60px;
@@ -50,8 +56,13 @@
 .about__title {
 	
 	position: relative;
-	bottom: 70px;
+	bottom: 110px;
+
 	@media #{$breakpoint-md} {
+		bottom: 210px;
+	}
+
+	@media #{$breakpoint-ml} {
 		bottom: 90px;
 		align-self: center;
 	}
@@ -62,9 +73,29 @@
 	top: 0;
 	color: rgba(255,255,255,0);
 	-webkit-text-stroke: 1px white;
+	width: 250px;
 
 		@media #{$breakpoint-md} {
+				width: 400px;
+			}
+
+		@media #{$breakpoint-ml} {
 			width: 600px;
 		}
 	
+}
+
+.h1--about {
+	font-size: 40px;
+	line-height: 45px;
+
+	@media #{$breakpoint-md} {
+		font-size: 60px;
+		line-height: 65px;
+	}
+
+	@media #{$breakpoint-ml} {
+		font-size: 100px;
+		line-height: 110px;
+	}
 }

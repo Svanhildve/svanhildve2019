@@ -12,9 +12,3 @@ body {
 	background: #0F1223;
 	color: #ffffff;
 }
-
-.grid-container.about {
-	@media #{$breakpoint-md} {
-		padding-left: 100px;
-	}
-}
