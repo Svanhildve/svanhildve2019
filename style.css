@@ -667,7 +667,10 @@ a.squiggly {
   right: 0;
   z-index: -1000;
   position: relative;
-  height: 500px; }
+  height: 400px; }
+  @media only screen and (min-width: 1024px) {
+    .about__image-wrap {
+      height: 500px; } }
 
 .about__text {
   font-weight: 200;
@@ -726,47 +729,55 @@ a.squiggly {
       font-size: 100px;
       line-height: 110px; } }
 
+.projects {
+  margin-left: 100px;
+  margin-right: 100px; }
+
 .portfolio-card__item {
-  text-align: center;
-  margin: auto;
-  align-content: center;
   position: relative; }
 
 .portfolio-cards {
-  display: inline-block;
-  vertical-align: center; }
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 20px; }
   .portfolio-cards a {
     text-decoration: none; }
     .portfolio-cards a:hover h2 {
       color: rgba(255, 255, 255, 0);
       -webkit-text-stroke: 1px white; }
+    .portfolio-cards a:hover .portfolio-card__img {
+      transform: scale(1.15);
+      transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); }
+    .portfolio-cards a:hover .portfolio-card__img-wrap {
+      transform: scale(0.95);
+      transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); }
 
 .portfolio-card__content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   color: #fff;
-  width: inherit; }
+  width: inherit;
+  bottom: -60px;
+  width: 500px;
+  left: 40px; }
 
-/*
-.portfolio-cards {
-	position: relative;
-	margin: auto;
-}
-*/
-.slide__img-wrap {
-  width: 380px;
-  height: 500px;
-  max-height: 100%;
-  overflow: hidden;
+.portfolio-card {
+  flex-direction: row; }
+
+.portfolio-card__img-wrap {
+  /*	height: 500px;
+      max-height: 100%;
+      overflow: hidden;
+      position: relative;
+      margin: auto;
+      display: block;*/
+  right: 0;
+  z-index: -1000;
   position: relative;
-  margin: auto;
-  display: block; }
+  height: 500px;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); }
 
-.slide__img {
+.portfolio-card__img {
   width: 100%;
   height: 100%;
   left: 0;
@@ -775,7 +786,8 @@ a.squiggly {
   background-position: 50% 50%;
   position: absolute;
   backface-visibility: hidden;
-  background-image: url("images/rr.jpg"); }
+  background-image: url("images/lavida.jpg");
+  transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); }
 
 /*
 .portfolio-card__item {

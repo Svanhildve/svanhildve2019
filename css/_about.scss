@@ -20,7 +20,12 @@
 	right: 0;
 	z-index: -1000;
 	position: relative;
-	height: 500px;
+	height: 400px;
+
+	@media #{$breakpoint-ml} {
+		height: 500px;
+	}
+	
 }
 
 .about__text {
