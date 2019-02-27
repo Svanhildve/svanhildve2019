@@ -1,8 +1,8 @@
 // landing
 
 .projects {
-	margin-left: 100px;
-	margin-right: 100px;
+//	margin-left: 100px;
+//	margin-right: 100px;
 }
 
 .portfolio-card__item {
@@ -13,8 +13,8 @@
 }
 
 .portfolio-cards {
-	display: flex;
-	flex-direction: column-reverse;
+//	display: flex;
+//	flex-direction: column-reverse;
 	margin-top: 20px;
 
 
@@ -33,12 +33,12 @@
 
 			.portfolio-card__img {
 				transform: scale(1.15);
-				transition: transform .4s cubic-bezier(.645,.045,.355,1),-webkit-transform .4s cubic-bezier(.645,.045,.355,1);
+				transition: transform .3s cubic-bezier(.645,.045,.355,1),-webkit-transform .3s cubic-bezier(.645,.045,.355,1);
 			}
 
 			.portfolio-card__img-wrap {
 				transform: scale(0.95);
-				transition: transform .4s cubic-bezier(.645,.045,.355,1),-webkit-transform .4s cubic-bezier(.645,.045,.355,1);
+				transition: transform .3s cubic-bezier(.645,.045,.355,1),-webkit-transform .3s cubic-bezier(.645,.045,.355,1);
 			}
 
 		}
@@ -50,8 +50,6 @@
     color: #fff;
     width: inherit;
     bottom: -60px;
-    width: 500px;
-    left: 40px;
 }
 
 .portfolio-card {
@@ -73,7 +71,7 @@
     position: relative;
 	height: 500px;
 	overflow: hidden;
-	transition: transform .4s cubic-bezier(.645,.045,.355,1),-webkit-transform .4s cubic-bezier(.645,.045,.355,1);
+	transition: transform .3s cubic-bezier(.645,.045,.355,1),-webkit-transform .3s cubic-bezier(.645,.045,.355,1);
 }
 
 .portfolio-card__img {
@@ -85,8 +83,43 @@
     background-position: 50% 50%;
     position: absolute;
     backface-visibility: hidden;
-    background-image: url('images/lavida.jpg');
-    transition: transform .4s cubic-bezier(.645,.045,.355,1),-webkit-transform .4s cubic-bezier(.645,.045,.355,1);
+    transition: transform .3s cubic-bezier(.645,.045,.355,1),-webkit-transform .3s cubic-bezier(.645,.045,.355,1);
+}
+
+.portfolio-card__item--1 {
+
+	.portfolio-card__content {
+	    width: 500px;
+	    left: 40px;
+	}
+
+	.portfolio-card__img {
+	   background-image: url('images/lavida.jpg');
+	}
+}
+
+.portfolio-card__item--2 {
+
+	top: 70px;
+
+
+	.portfolio-card__content {
+		text-align: center;
+		left: 50%;
+		margin: auto;
+		transform: translate(-50%, 0%);
+
+
+	}
+
+	.portfolio-card__img {
+	   background-image: url('images/ruter.jpg');
+	}
+
+	.portfolio-card__img-wrap {
+		height: 300px;
+	}
+
 }
 /*
 .portfolio-card__item {

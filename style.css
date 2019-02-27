@@ -259,7 +259,11 @@
     width: 100%; }
 
   .col-m-offset-12 {
-    margin-left: 100%; } }
+    margin-left: 100%; }
+
+  .wrapper {
+    padding: 0px 100px;
+    margin: auto; } }
 @media only screen and (min-width: 1024px) {
   .col-ml-0 {
     width: 0%; }
@@ -729,16 +733,10 @@ a.squiggly {
       font-size: 100px;
       line-height: 110px; } }
 
-.projects {
-  margin-left: 100px;
-  margin-right: 100px; }
-
 .portfolio-card__item {
   position: relative; }
 
 .portfolio-cards {
-  display: flex;
-  flex-direction: column-reverse;
   margin-top: 20px; }
   .portfolio-cards a {
     text-decoration: none; }
@@ -747,18 +745,16 @@ a.squiggly {
       -webkit-text-stroke: 1px white; }
     .portfolio-cards a:hover .portfolio-card__img {
       transform: scale(1.15);
-      transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); }
+      transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
     .portfolio-cards a:hover .portfolio-card__img-wrap {
       transform: scale(0.95);
-      transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); }
+      transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
 
 .portfolio-card__content {
   position: absolute;
   color: #fff;
   width: inherit;
-  bottom: -60px;
-  width: 500px;
-  left: 40px; }
+  bottom: -60px; }
 
 .portfolio-card {
   flex-direction: row; }
@@ -775,7 +771,7 @@ a.squiggly {
   position: relative;
   height: 500px;
   overflow: hidden;
-  transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
 
 .portfolio-card__img {
   width: 100%;
@@ -786,8 +782,25 @@ a.squiggly {
   background-position: 50% 50%;
   position: absolute;
   backface-visibility: hidden;
-  background-image: url("images/lavida.jpg");
-  transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+.portfolio-card__item--1 .portfolio-card__content {
+  width: 500px;
+  left: 40px; }
+.portfolio-card__item--1 .portfolio-card__img {
+  background-image: url("images/lavida.jpg"); }
+
+.portfolio-card__item--2 {
+  top: 70px; }
+  .portfolio-card__item--2 .portfolio-card__content {
+    text-align: center;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, 0%); }
+  .portfolio-card__item--2 .portfolio-card__img {
+    background-image: url("images/ruter.jpg"); }
+  .portfolio-card__item--2 .portfolio-card__img-wrap {
+    height: 300px; }
 
 /*
 .portfolio-card__item {
