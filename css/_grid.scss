@@ -55,6 +55,11 @@ $breakpoint-lg: 		"only screen and (min-width: 1170px)";
 		margin-left: 100% / $col-number * $i;
 	}
 
+	.wrapper {
+		padding: 0px 20px;
+		margin: auto;
+	}
+
 }
 
 @media #{$breakpoint-palm} {
@@ -87,10 +92,7 @@ $breakpoint-lg: 		"only screen and (min-width: 1170px)";
 
 	}
 
-	.wrapper {
-		padding: 0px 100px;
-		margin: auto;
-	}
+
 	 
 }
 
@@ -106,6 +108,11 @@ $breakpoint-lg: 		"only screen and (min-width: 1170px)";
 			margin-left: 100% / $col-number * $i;
 		}
 
+	}
+
+		.wrapper {
+		padding: 0px 100px;
+		margin: auto;
 	}
 	 
 }
