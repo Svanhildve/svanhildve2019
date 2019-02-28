@@ -159,6 +159,7 @@
 
 		@media #{$breakpoint-md} {
 			right: 40px;
+			min-width: 500px;
 		}
 
 	}
@@ -188,6 +189,7 @@
 
 		@media #{$breakpoint-md} {
 			left: 40px;
+			min-width: 500px;
 		}
 
 	}

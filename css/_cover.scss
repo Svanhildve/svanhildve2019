@@ -1,3 +1,5 @@
+
+
 .svanhild {
 	background: url('images/svanhild.jpg');
 	background-size: cover;
@@ -26,12 +28,13 @@
 }
 
 .cover__section {
-	height: calc(100vh - 79px);
+	height: calc(100vh - 95px);
 	display: flex;
 	flex-flow: row wrap;
 
+
 	@media #{$breakpoint-md} {
-		height: calc(100vh - 139px);
+		height: calc(100vh - 235px);
 	}
 }
 
@@ -41,12 +44,13 @@
 
 .cover__text h1 {
 
-	padding: 20px;
+//	padding: 20px;
 	font-size: 20px;
 	line-height: 36px;
 	color: #1E2239;
 	font-weight: 400;
-	margin-bottom: 0px;
+	margin-bottom: 20px;
+	font-family: 'Acumin Pro Wide';
 	
 	//margin-top: auto;
 
@@ -68,9 +72,10 @@
 	}
 
 	@media #{$breakpoint-md} {
-		font-size: 34px;
-		line-height: 60px;
-		padding: 50px;
+		font-size: 24px;
+		line-height: 45px;
+		font-weight: 400;
+	//	padding: 50px;
 		margin-bottom: 100px;
 
 
