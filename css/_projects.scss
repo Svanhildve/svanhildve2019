@@ -12,7 +12,7 @@
 	position: relative;
 }
 
-.portfolio-cards {
+.projects {
 //	display: flex;
 //	flex-direction: column-reverse;
 	margin-top: 20px;
@@ -49,14 +49,14 @@
 	position: absolute;
     color: #fff;
     width: inherit;
-    bottom: -28px;
+    bottom: -40px;
 
     @media #{$breakpoint-md} {
-    	bottom: -37px;
+    	bottom: -49px;
     }
 
     @media #{$breakpoint-ml} {
-    	bottom: -60px;
+    	bottom: -74px;
     }
 }
 
@@ -104,9 +104,21 @@
 
 .portfolio-card__item--1 {
 
+	margin-bottom: 120px;
+
+	@media #{$breakpoint-md} {
+		margin-bottom: 150px;
+	}
+
+	@media #{$breakpoint-ml} {
+		margin-bottom: 200px;
+	}
+
 
 	.portfolio-card__content {
+
 		left: 30px;
+
 		@media #{$breakpoint-md} {
 		    width: 500px;
 		    left: 40px;
@@ -124,14 +136,15 @@
 
 .portfolio-card__item--2 {
 
-	top: 70px;
+	margin-bottom: 120px;
+
+	@media #{$breakpoint-md} {
+		margin-top: 70px;
+	}
 
 
 	.portfolio-card__content {
-	/*	text-align: center;
-		left: 50%;
-		margin: auto;
-		transform: translate(-50%, 0%);*/
+
 		text-align: right;
 		right: 30px;
 
@@ -150,6 +163,70 @@
 	}
 
 }
+
+.portfolio-card__item--3 {
+
+	margin-bottom: 120px;
+
+	@media #{$breakpoint-ml} {
+		margin-bottom: 200px;
+	}
+
+	.portfolio-card__content {
+
+		text-align: left;
+		left: 30px;
+
+		@media #{$breakpoint-md} {
+			left: 40px;
+		}
+
+	}
+
+	.portfolio-card__img {
+	   background-image: url('images/nettbuss.jpg');
+	}
+
+	.portfolio-card__img-wrap {
+		padding-bottom: 70%;
+	}
+
+}
+
+.portfolio-card__item--4 {
+
+	margin-bottom: 120px;
+
+	@media #{$breakpoint-md} {
+		margin-bottom: 150px;
+		margin-top: 70px;
+	}
+
+	@media #{$breakpoint-ml} {
+		margin-bottom: 200px;
+		margin-top: 110px;
+	}
+
+
+	.portfolio-card__content {
+		text-align: right;
+		right: 30px;
+
+		@media #{$breakpoint-md} {
+		    width: 500px;
+		    right: 40px;
+	    }
+	}
+
+	.portfolio-card__img {
+	   background-image: url('images/lavida.jpg');
+	}
+
+	.portfolio-card__img-wrap {
+		padding-bottom: 130%;
+	}
+}
+
 /*
 .portfolio-card__item {
 	position: relative;

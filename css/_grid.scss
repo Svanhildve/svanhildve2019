@@ -34,7 +34,7 @@ $breakpoint-lg: 		"only screen and (min-width: 1170px)";
 [class*='col-'] {
 	float: left;
 	min-height: 1px;
-	padding: $grid-gutter;
+	padding: 0 $grid-gutter;
 }
 /*
 .row > :first-child {
