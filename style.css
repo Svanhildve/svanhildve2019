@@ -568,14 +568,14 @@ h1, h2, h3, h4, h5, h6 {
 .h2--project-card {
   font-size: 36px;
   line-height: 46px; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     .h2--project-card {
       font-size: 50px;
       line-height: 60px; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1170px) {
     .h2--project-card {
-      font-size: 70px;
-      line-height: 110px; } }
+      font-size: 60px;
+      line-height: 80px; } }
 
 .h1--project {
   font-size: 36px; }
@@ -813,13 +813,17 @@ a.squiggly {
   position: absolute;
   color: #fff;
   width: inherit;
-  bottom: -40px; }
+  bottom: -40px;
+  min-width: 300px; }
   @media only screen and (min-width: 768px) {
     .portfolio-card__content {
-      bottom: -49px; } }
+      bottom: -42px; } }
   @media only screen and (min-width: 1024px) {
     .portfolio-card__content {
-      bottom: -74px; } }
+      bottom: -51px; } }
+  @media only screen and (min-width: 1170px) {
+    .portfolio-card__content {
+      bottom: -60px; } }
 
 .portfolio-card__meta {
   font-size: 14px;
@@ -863,22 +867,25 @@ a.squiggly {
   @media only screen and (min-width: 1024px) {
     .portfolio-card__item--1 {
       margin-bottom: 200px; } }
+  @media only screen and (min-width: 1170px) {
+    .portfolio-card__item--1 {
+      margin-bottom: 250px; } }
   .portfolio-card__item--1 .portfolio-card__content {
     left: 30px; }
     @media only screen and (min-width: 768px) {
       .portfolio-card__item--1 .portfolio-card__content {
-        width: 500px;
-        left: 40px; } }
+        left: 40px;
+        min-width: 500px; } }
   .portfolio-card__item--1 .portfolio-card__img {
     background-image: url("images/lavida.jpg"); }
   .portfolio-card__item--1 .portfolio-card__img-wrap {
-    padding-bottom: 130%; }
+    padding-bottom: 110%; }
 
 .portfolio-card__item--2 {
   margin-bottom: 120px; }
   @media only screen and (min-width: 768px) {
     .portfolio-card__item--2 {
-      margin-top: 70px; } }
+      margin-top: 230px; } }
   .portfolio-card__item--2 .portfolio-card__content {
     text-align: right;
     right: 30px; }
@@ -910,23 +917,21 @@ a.squiggly {
   margin-bottom: 120px; }
   @media only screen and (min-width: 768px) {
     .portfolio-card__item--4 {
-      margin-bottom: 150px;
       margin-top: 70px; } }
   @media only screen and (min-width: 1024px) {
     .portfolio-card__item--4 {
-      margin-bottom: 200px;
       margin-top: 110px; } }
   .portfolio-card__item--4 .portfolio-card__content {
     text-align: right;
     right: 30px; }
     @media only screen and (min-width: 768px) {
       .portfolio-card__item--4 .portfolio-card__content {
-        width: 500px;
-        right: 40px; } }
+        right: 40px;
+        min-width: 500px; } }
   .portfolio-card__item--4 .portfolio-card__img {
     background-image: url("images/lavida.jpg"); }
   .portfolio-card__item--4 .portfolio-card__img-wrap {
-    padding-bottom: 130%; }
+    padding-bottom: 110%; }
 
 /*
 .portfolio-card__item {
