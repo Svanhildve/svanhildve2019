@@ -25,19 +25,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
 
-<script>
 
-		$(window).scroll(function(){
-		    if ($(this).scrollTop() > 0) {
-		       $('#navbar').addClass('fadeonscroll');
-		    } else {
-		       $('#navbar').removeClass('fadeonscroll');
-		    }
-		});
-
-
-
-</script>
 
 
 </head>
@@ -90,7 +78,7 @@
 
 				<h1><span class="cover__text-large">Hi there 👋🏻</span>
 				
-				<span>I’m <a class="cover__text-img-link">Svanhild Egge<div class="cover__text-img svanhild"></div></a>, an <a class="cover__text-img-link">Oslo<div class="cover__text-img oslo"></div></a>-based digital designer working at <a class="cover__text-img-link">Making Waves<div class="cover__text-img mw"></div></a> and managing <a class="cover__text-img-link">CreativeMornings Oslo<div class="cover__text-img cm"></div></a>. You might be able to find me nerding over some really good typography or well thought through micro interactions.
+				<span>I’m <a class="cover__text-img-link">Svanhild Egge<div class="cover__text-img svanhild"  id="showimage"></div></a>, an <a class="cover__text-img-link">Oslo<div class="cover__text-img oslo"></div></a>-based digital designer working at <a class="cover__text-img-link">Making Waves<div class="cover__text-img mw"></div></a> and managing <a class="cover__text-img-link">CreativeMornings Oslo<div class="cover__text-img cm"></div></a>. You might be able to find me nerding over some really good typography or well thought through micro interactions.
 				</span></h1>
 
 			</div>
@@ -141,7 +129,19 @@
 	  });
 	  </script>
 		
+	<script type="text/javascript">
+		
+		// $(document).mousemove(function(e){
+		//     $(".cover__text-img").css({left:e.pageX, top:e.pageY});
+		// });
 
+		// var example = document.getElementById('showimage'); 
+		// example.onmousemove = function(e) { 
+		//     var x = e.pageX - this.offsetLeft; 
+		//     var y = e.pageY - this.offsetTop; 
+		// }
+
+	</script>
 
 	</section>
 
