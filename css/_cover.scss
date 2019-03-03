@@ -6,15 +6,21 @@
 	position: absolute;
 	pointer-events: none;
 	bottom: 100%;
-	left: 100%;
+	left: 0;
 	margin-left: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 40px;
 	transform: translate( -10px, 10px );
   	transition: all .2s ease;
+
+  	@media #{$breakpoint-ml} {
+  		bottom: 100%;
+		left: 100%;
+		margin-bottom: 10px;
+  	}
 }
 
 .cover__text-img-link {
-	position: relative;
+	
 	display: inline-block;
 	&:hover {
 		.cover__text-img {
@@ -22,6 +28,13 @@
 			transform: translate( 0, 0 );
 		}
 	}
+
+	@media #{$breakpoint-ml} {
+
+		position: relative;
+
+	}
+
 }
 
 .svanhild {
@@ -70,6 +83,7 @@
 
 .cover__text {
   align-self: flex-end;
+  position: relative;
 }
 
 .cover__text h1 {
