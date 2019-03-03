@@ -35,7 +35,15 @@
 .about__text {
 	font-weight: 200;
 	position: relative;
+	margin-bottom: 20px;
 
+	@media #{$breakpoint-md} {
+		margin-bottom: 50px;
+	}
+
+	@media #{$breakpoint-ml} {
+		margin-bottom: 100px;
+	}
 }
 
 .about__headline {

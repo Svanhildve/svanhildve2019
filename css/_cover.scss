@@ -32,8 +32,12 @@
 	display: flex;
 	flex-flow: row wrap;
 
-
 	@media #{$breakpoint-md} {
+		height: calc(100vh - 135px);
+	}
+
+
+	@media #{$breakpoint-ml} {
 		height: calc(100vh - 235px);
 	}
 }
@@ -45,7 +49,7 @@
 .cover__text h1 {
 
 //	padding: 20px;
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 36px;
 	color: #1E2239;
 	font-weight: 400;
@@ -56,23 +60,49 @@
 
 	a {
 		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23f00' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-  		background-position: 0 30px;
+  		background-position: 0 19px;
     	background-size: auto 2px;
     	background-repeat: repeat-x;
-    	padding-bottom: 3px;
+    	padding-bottom: 6px;
     	text-decoration: none;
 
     	&:hover {
     		  color: #FF2E12;
 			  background-image: linear-gradient(#FF2E12 50%, #FF2E12 50%);
 			  background-repeat: repeat-x;
-			  background-size: auto 1px;
-			  background-position: 0 52px;
+			  background-size: auto 0.8px;
+			  background-position: 0 20px;
     	}
 	}
 
 	@media #{$breakpoint-md} {
-		font-size: 24px;
+		font-size: 18px;
+		line-height: 40px;
+		font-weight: 400;
+		margin-bottom: 50px;
+
+
+		a {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23f00' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+	  		background-position: 0 20px;
+	    	background-size: auto 3px;
+	    	background-repeat: repeat-x;
+	    	padding-bottom: 6px;
+	    	text-decoration: none;
+
+	    	&:hover {
+	    		  color: #FF2E12;
+				  background-image: linear-gradient(#FF2E12 50%, #FF2E12 50%);
+				  background-repeat: repeat-x;
+				  background-size: auto 1px;
+				  background-position: 0 21px;
+	    	}
+		}
+
+	}
+
+	@media #{$breakpoint-ml} {
+		font-size: 20px;
 		line-height: 45px;
 		font-weight: 400;
 	//	padding: 50px;
@@ -81,10 +111,10 @@
 
 		a {
 			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23f00' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-	  		background-position: 0 50px;
+	  		background-position: 0 23px;
 	    	background-size: auto 3px;
 	    	background-repeat: repeat-x;
-	    	padding-bottom: 3px;
+	    	padding-bottom: 7px;
 	    	text-decoration: none;
 
 	    	&:hover {
@@ -92,11 +122,23 @@
 				  background-image: linear-gradient(#FF2E12 50%, #FF2E12 50%);
 				  background-repeat: repeat-x;
 				  background-size: auto 1px;
-				  background-position: 0 52px;
+				  background-position: 0 24px;
 	    	}
 		}
 
 	}
 
 	
+}
+
+.cover__text-large {
+	font-size: 40px;
+	font-family: 'Eczar semibold', serif;
+	margin-bottom: 20px;
+	display: block;
+
+	@media #{$breakpoint-ml} {
+		font-size: 60px;
+		margin-bottom: 40px;
+	}
 }
