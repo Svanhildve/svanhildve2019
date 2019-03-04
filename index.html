@@ -70,7 +70,7 @@
 
 	</div>
 
-	<section class="grid-container wrapper">
+	<section class="grid-container wrapper cover">
 
 		<div class="row cover__section">
 
@@ -131,15 +131,19 @@
 		
 	<script type="text/javascript">
 		
-		// $(document).mousemove(function(e){
-		//     $(".cover__text-img").css({left:e.pageX, top:e.pageY});
-		// });
+		
 
-		// var example = document.getElementById('showimage'); 
-		// example.onmousemove = function(e) { 
-		//     var x = e.pageX - this.offsetLeft; 
-		//     var y = e.pageY - this.offsetTop; 
-		// }
+	 //	$(document).mousemove(function(e){
+	 //	    $(".cover__text-img").css({left:e.clientX + 30, top:e.clientY - 220});
+	//	 });
+
+	$(document).mousemove(function(e){
+	    if (parseInt($(window).width()) > 1024) {
+	        $(".cover__text-img").css({left:e.clientX + 30, top:e.clientY - 220});
+	    }
+	});
+		
+
 
 	</script>
 

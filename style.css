@@ -627,7 +627,7 @@ body {
 .cover__text-img {
   width: 300px;
   height: 200px;
-  display: block;
+  display: none;
   opacity: 0;
   position: absolute;
   pointer-events: none;
@@ -639,18 +639,15 @@ body {
   transition: all .2s ease; }
   @media only screen and (min-width: 1024px) {
     .cover__text-img {
-      bottom: 100%;
-      left: 100%;
       margin-bottom: 10px; } }
 
 .cover__text-img-link {
   display: inline-block; }
   .cover__text-img-link:hover .cover__text-img {
     opacity: 1;
-    transform: translate(0, 0); }
-  @media only screen and (min-width: 1024px) {
-    .cover__text-img-link {
-      position: relative; } }
+    transform: translate(0, 0);
+    display: block;
+    transition: all .2s ease; }
 
 .svanhild {
   background: url("images/svanhild.jpg");
@@ -690,6 +687,9 @@ body {
 .cover__text {
   align-self: flex-end;
   position: relative; }
+  @media only screen and (min-width: 1024px) {
+    .cover__text {
+      position: static; } }
 
 .cover__text h1 {
   font-size: 16px;
