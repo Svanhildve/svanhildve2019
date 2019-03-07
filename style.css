@@ -1013,7 +1013,8 @@ a.squiggly {
 
 .case__meta {
   font-family: 'Acumin Pro Wide', sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 16px; }
   @media only screen and (min-width: 768px) {
     .case__meta {
       font-size: 18px; } }
@@ -1021,7 +1022,13 @@ a.squiggly {
 .case__top {
   text-align: center;
   position: relative;
-  top: 40px; }
+  top: 80px; }
+  @media only screen and (min-width: 768px) {
+    .case__top {
+      top: 130px; } }
+  @media only screen and (min-width: 1024px) {
+    .case__top {
+      top: 60px; } }
 
 .h1--project {
   font-size: 36px; }
@@ -1035,7 +1042,7 @@ a.squiggly {
   position: relative;
   overflow: hidden;
   transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  padding-bottom: 60%; }
+  padding-bottom: 120%; }
 
 .case__hero-img {
   width: 100%;
@@ -1051,7 +1058,10 @@ a.squiggly {
 
 .case__headline {
   position: absolute;
-  top: -85px; }
+  top: -50px; }
+  @media only screen and (min-width: 768px) {
+    .case__headline {
+      top: -85px; } }
 
 .next-project a {
   text-decoration: none; }
@@ -1068,14 +1078,6 @@ a.squiggly {
   @media only screen and (min-width: 768px) {
     .next-project__wrap {
       padding: 150px 0; } }
-
-.next-project__meta {
-  display: block;
-  font-family: 'Acumin Pro Wide', sans-serif;
-  font-size: 16px; }
-  @media only screen and (min-width: 768px) {
-    .next-project__meta {
-      font-size: 20px; } }
 
 .next-project__title {
   display: block;

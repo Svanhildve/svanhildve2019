@@ -3,6 +3,7 @@
 .case__meta {
 	font-family: 'Acumin Pro Wide', sans-serif;
 	font-weight: 400;
+	font-size: 16px;
 	@media #{$breakpoint-md} {
 		font-size: 18px;
 	}
@@ -12,7 +13,16 @@
 .case__top {
 	text-align: center;
 	position: relative;
-	top: 40px;
+	top: 80px;
+
+	@media #{$breakpoint-md} {
+		top: 130px;
+	}
+
+	@media #{$breakpoint-ml} {
+		top: 60px;
+	}
+	
 }
 
 .h1--project {
@@ -28,7 +38,7 @@
     position: relative;
 	overflow: hidden;
 	transition: transform .3s cubic-bezier(.645,.045,.355,1),-webkit-transform .3s cubic-bezier(.645,.045,.355,1);
-	padding-bottom: 60%;
+	padding-bottom: 120%;
 }
 
 
@@ -47,7 +57,11 @@
 
 .case__headline {
 	position: absolute;
-	top: -85px;
+	top: -50px;
+
+	@media #{$breakpoint-md} {
+		top: -85px;
+	}
 }
 
 
@@ -77,15 +91,6 @@
 	padding: 50px 0;
 	@media #{$breakpoint-md} {
 		padding: 150px 0;
-	}
-}
-
-.next-project__meta {
-	display: block;
-	font-family: 'Acumin Pro Wide', sans-serif;
-	font-size: 16px;
-	@media #{$breakpoint-md} {
-		font-size: 20px;
 	}
 }
 
