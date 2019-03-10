@@ -564,15 +564,24 @@ strong {
   font-family: 'Acumin Pro Wide';
   font-weight: normal; }
 
-.lede {
-  font-size: 21px;
-  line-height: 33px; }
-
-h1, h2, h3, h4, h5, h6 {
+h1 {
   font-family: 'Eczar semibold', serif;
   font-weight: normal; }
 
+h2, h3, h4, h5, h6 {
+  font-family: 'Acumin Pro Wide', sans-serif;
+  font-weight: normal; }
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 12px; }
+  @media only screen and (min-width: 1024px) {
+    h2 {
+      font-size: 22px; } }
+
 .h2--project-card {
+  font-family: 'Eczar semibold', serif;
+  font-weight: normal;
   font-size: 36px;
   line-height: 46px; }
   @media only screen and (min-width: 1024px) {
@@ -1022,13 +1031,14 @@ a.squiggly {
 .case__top {
   text-align: center;
   position: relative;
-  top: 80px; }
+  margin-top: 80px;
+  margin-bottom: 30px; }
   @media only screen and (min-width: 768px) {
     .case__top {
-      top: 130px; } }
+      margin-top: 130px; } }
   @media only screen and (min-width: 1024px) {
     .case__top {
-      top: 60px; } }
+      margin-top: 60px; } }
 
 .h1--project {
   font-size: 36px; }
@@ -1042,7 +1052,11 @@ a.squiggly {
   position: relative;
   overflow: hidden;
   transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  padding-bottom: 120%; }
+  padding-bottom: 120%;
+  margin-bottom: 50px; }
+  @media only screen and (min-width: 1024px) {
+    .case__hero-wrap {
+      margin-bottom: 80px; } }
 
 .case__hero-img {
   width: 100%;
@@ -1063,6 +1077,20 @@ a.squiggly {
     .case__headline {
       top: -85px; } }
 
+.case__lead {
+  font-size: 24px;
+  line-height: 36px; }
+  @media only screen and (min-width: 1024px) {
+    .case__lead {
+      font-size: 30px;
+      line-height: 44px; } }
+
+.case__text--right {
+  margin-bottom: 30px; }
+
+.case__text--left {
+  margin-bottom: 30px; }
+
 .next-project a {
   text-decoration: none; }
 
@@ -1081,7 +1109,8 @@ a.squiggly {
 
 .next-project__title {
   display: block;
-  font-size: 25px; }
+  font-size: 25px;
+  font-family: 'Eczar semibold', serif; }
   @media only screen and (min-width: 768px) {
     .next-project__title {
       font-size: 60px; } }

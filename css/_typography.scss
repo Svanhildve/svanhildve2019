@@ -18,18 +18,29 @@ strong {
 	font-weight: normal;
 }
 
-.lede {
-	font-size: 21px;
-	line-height: 33px;
-}
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
 	font-family: 'Eczar semibold', serif;
 	font-weight: normal;
 }
 
+h2, h3, h4, h5, h6 {
+	font-family: 'Acumin Pro Wide', sans-serif;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 18px;
+	margin-bottom: 12px;
+	@media #{$breakpoint-ml} {
+		font-size: 22px;
+	}
+}
+
 
 .h2--project-card {
+	font-family: 'Eczar semibold', serif;
+	font-weight: normal;
 	font-size: 36px;
 	line-height: 46px;
 
